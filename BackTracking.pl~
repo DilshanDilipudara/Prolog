@@ -25,5 +25,5 @@ max(X,Y,Y) :- X < Y .
 
 %Red cut
 
-maxG(X,Y,X) :- X >= Y,!.
+maxG(X,Y,X) :- X >= Y.
 maxG(_,Y,Y) .

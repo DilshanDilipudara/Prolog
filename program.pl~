@@ -1,6 +1,6 @@
 
 % likes(person,activity)
-
+/*
 likes(ellen,tennis).
 likes(john,football).
 likes(tom,baseball).
@@ -9,7 +9,7 @@ likes(mark,tennis).
 
 %if tom like somthing then bill like
 
-likes(bill,X) :- likes(tom,X).
+likes(bill,X) :- likes(tom,X).*/
 
 % car(brand,millage,age,color,price)
 
@@ -24,5 +24,13 @@ student(tom, 10).
 student(charis, 9).
 student(susan, 8).
 
+%like(name,activity).
 
+like(shashika,orange).
+like(pulinda,apple).
+like(rayan,orange).
+like(sahan,apple).
 
+%if shashika like apple the prasanna like apple.
+
+like(prasanna,X) :- like(shashika,X).
