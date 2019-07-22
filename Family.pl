@@ -1,0 +1,35 @@
+
+% male
+
+male(alan).
+male(charles).
+male(bob).
+male(ivan).
+
+% female
+
+female(beverly).
+female(fay).
+femmle(marilyn).
+female(sally).
+
+%relationship
+
+mother(marilyn,beverly).
+mother(alan,sally).
+
+father(alan,bob).
+father(beverly,charles).
+father(ivan,bob).
+father(marilyn,alan).
+
+%if child's parent then child's father and mother
+
+parent(Child,Parent):- mother(Child,Parent);father(Child,Parent).
+
+brother(X,Brother):- male(Brother);parent(X,Parent);parent(Brother,Parent).
+
+sister(X,Y):- female(Y);parent(X,Parent);parent(Y,Parent).
+
+grandfather(X,G) :-
+
