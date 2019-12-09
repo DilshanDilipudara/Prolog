@@ -1,7 +1,7 @@
 
 
 member(H,[H|_]).
-member(H,[_|T]) :- member(H,T).
+member(H,[_|T]) :-  member(H,T).
 
 member_cut(H,[H|_]) :- !.
 member_cut(H,[T]) :- member_cut(H,T).
